@@ -1,0 +1,192 @@
+body,
+html {
+  margin: 0%; /* Altura del titulo */
+  padding: 0;
+  height: 100%; /* Altura del titulo */
+  background-image: url("documentos/fondo3.jpg");
+  background-size: cover;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.contenedor {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  min-height: 100%;
+  position: relative;
+  padding-bottom: 100px; /* Altura del pie de página */
+}
+
+.titulo-principal {
+  font-size: 2em;
+  margin: 1%; /* Altura del titulo */
+}
+.subtitulo {
+  font-size: 1.5em;
+  margin: 1%; /* Altura del titulo */
+}
+
+.bloques {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.bloque {
+  width: 30%;
+  padding: 20px;
+  margin: 10px;
+  transition: transform 0.3s;
+  cursor: pointer;
+  overflow-y: scroll; /* Agrega scroll vertical si el contenido es más grande que el bloque */
+  max-height: 300px; /* Ajusta la altura máxima según tus necesidades */
+  position: relative; /* Necesario para position: sticky */
+}
+
+.bloque h2 {
+  color: #ffffff;
+  background-color: #6d7a92; /* Color de fondo para el título */
+  position: sticky;
+  top: 0%; /* Distancia desde la parte superior del bloque */
+  padding: 0px;
+  margin-top: 0; /* Elimina el margen superior */
+  width: calc(100% - 0px); /* Ajusta el ancho para considerar el padding */
+}
+
+/* Estilos para las imágenes de vista previa */
+.bloque img {
+  max-width: 100%; /* La imagen no se saldrá del ancho del bloque */
+  height: auto; /* La altura se ajustará automáticamente para mantener la proporción */
+}
+
+.bloque:hover {
+  transform: scale(1.05);
+}
+.pie-pagina {
+  font-weight: bold;
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  color: #ffffff;
+}
+
+/* Estilos para el menú de navegación */
+.menu-navegacion {
+  cursor: pointer; /* Cambia el cursor al pasar sobre el menú */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #333;
+  padding: 1px;
+}
+
+.menu-icono {
+  display: none; /* Oculta el icono en pantallas grandes */
+  cursor: pointer;
+}
+
+.barra {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+}
+
+.menu-enlaces {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu-enlaces li {
+  padding: 14px 20px;
+}
+
+.menu-enlaces a {
+  text-decoration: none;
+  color: white;
+  font-size: 1em;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 480px) {
+  .menu-navegacion {
+    top: 20px; /* Ajusta la posición vertical según tus necesidades */
+    right: 20px; /* Ajusta la posición horizontal según tus necesidades */
+    position: fixed;
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el menú */
+    background-color: #333;
+    padding: 1px;
+  }
+
+  /* Estilos para las líneas del menú */
+  .menu-navegacion::before,
+  .menu-navegacion::after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 3px;
+    background-color: #333; /* Color de las líneas */
+    margin: 5px 0;
+  }
+
+  .menu-icono {
+    display: block; /* Muestra el icono en pantallas pequeñas */
+  }
+
+  .menu-enlaces {
+    display: none; /* Oculta los enlaces en pantallas pequeñas */
+    flex-direction: flex;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    background-color: #333;
+    width: 310px;
+  }
+
+  .menu-enlaces.active {
+    display: flex; /* Muestra los enlaces cuando se hace clic en el icono */
+  }
+
+  body,
+  html {
+    background-image: url("documentos/fondo.jpg");
+    background-size: cover;
+  }
+
+  .titulo-principal {
+    font-size: 1em;
+    margin: 1%; /* Altura del titulo */
+    padding-top: 30%;
+  }
+
+  .subtitulo {
+    font-size: 0.7em;
+    margin: 1%; /* Altura del titulo */
+  }
+
+  .bloques {
+    display: block; /* Esto asegura que el bloque se muestre debajo del título */
+  }
+
+  .bloque {
+    width: 83%;
+  }
+
+  .pie-pagina {
+    font-weight: bold;
+    position: relative;
+    bottom: 10%;
+    width: 100%;
+    text-align: center;
+    padding: 70px;
+    box-sizing: border-box;
+    color: #ffffff;
+  }
+}

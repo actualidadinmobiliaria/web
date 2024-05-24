@@ -1,0 +1,8 @@
+Quiero hacer una página web y necesito el Código completo en HTML, CSS y java script, para que tenga en el fondo de toda la pagina una imagen, arriba un título en el centro que diga: ACTUALIDAD INMOBILIARIA. Abajo y centrado un título:  Inmuebles en Arriendo, Venta y Anticresis, en la ciudad de Popayán. Abajo en tres bloques, con un fondo color azul claro y un marco delgado en negro, que tengan animación al pasar el raton, debe ir: Primer bloque, a la izquierda el título: INMUEBLES EN ARRIENDO. Debajo de este título debe ir un código para colocar enlaces en una lista y los deje visualizar en la pagína como una vista previa.
+
+Al lado el segundo bloque, en el centro el título:  INMUEBLES EN VENTA. Debajo de este título debe ir: debe ir un código para colocar enlaces en una lista y los deje visualizar en la pagína como una vista previa.
+
+al lado el tercer bloque, a la derecha el título: INMUEBLES EN ANTICRESIS. Y debajo de ste título:
+debe ir un código para colocar enlaces en una lista y los deje visualizar en la pagína como una vista previa.
+
+Al final abajo de la pagina un pie de págiba centrado, en negrilla que diga: Todos los derechos reservados - 2024
