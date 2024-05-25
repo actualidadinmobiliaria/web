@@ -1,3 +1,14 @@
+
+body,
+html {
+  margin: 0%; /* Altura del titulo */
+  padding: 0%;
+  height: 100%; /* Altura del titulo */
+  background-image: url("documentos/fondo.jpg");
+  background-size: cover;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 body {
   scrollbar-width: thin; /* "auto" o "thin" */
   scrollbar-color: rgb(255, 255, 255) rgb(0, 0, 0); /* Color del deslizador y del carril */
@@ -18,15 +29,56 @@ body::-webkit-scrollbar-thumb {
 }
 
 
-body,
-html {
-  margin: 0%; /* Altura del titulo */
-  padding: 0%;
-  height: 100%; /* Altura del titulo */
-  background-image: url("documentos/fondo.jpg");
-  background-size: cover;
-  font-family: Arial, Helvetica, sans-serif;
+.donaciones {
+  position: relative;
+  top: 2%;
+  padding-left: 2%;
+  font-size: 0.7em;
+
 }
+
+/* Estilos para el menú de navegación */
+.menu-navegacion {
+  position: relative;
+  top: 5%;
+  cursor: pointer; /* Cambia el cursor al pasar sobre el menú */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #333;
+  padding: 0px;
+}
+
+.menu-icono {
+  display: none; /* Oculta el icono en pantallas grandes */
+  cursor: pointer;
+}
+
+.barra {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+}
+
+.menu-enlaces {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu-enlaces li {
+  padding: 14px 20px;
+}
+
+.menu-enlaces a {
+  text-decoration: none;
+  color: white;
+  font-size: 1em;
+}
+
+
 .contenedor {
   text-align: center;
   align-items: center;
@@ -128,6 +180,10 @@ html {
 
 .bloque:hover {
   transform: scale(1.05);
+
+
+
+
 }
 .pie-pagina {
   font-weight: bold;
@@ -140,46 +196,6 @@ html {
   color: #ffffff;
 }
 
-/* Estilos para el menú de navegación */
-.menu-navegacion {
-  position: relative;
-  top: 5%;
-  cursor: pointer; /* Cambia el cursor al pasar sobre el menú */
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  background-color: #333;
-  padding: 1px;
-}
-
-.menu-icono {
-  display: none; /* Oculta el icono en pantallas grandes */
-  cursor: pointer;
-}
-
-.barra {
-  width: 25px;
-  height: 3px;
-  background-color: white;
-  margin: 4px 0;
-}
-
-.menu-enlaces {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-
-.menu-enlaces li {
-  padding: 14px 20px;
-}
-
-.menu-enlaces a {
-  text-decoration: none;
-  color: white;
-  font-size: 1em;
-}
 
 /* Estilos para pantallas pequeñas */
 @media (max-width: 480px) {
