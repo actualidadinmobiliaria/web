@@ -6,7 +6,11 @@
     <title>Actualidad Inmobiliaria</title>
     <link rel="stylesheet" href="estilos.css" />
   </head>
-  <body>
+  <body onload="increaseCounter()"> 
+
+
+
+
     <!-- Menú de navegación -->
     <nav class="menu-navegacion">
       <div class="menu-icono">
@@ -41,8 +45,15 @@
           <!-- Aquí irá el código JavaScript para agregar los enlaces con vista previa -->
         </div>
       </div>
-      <div class="pie-pagina">Todos los derechos reservados - 2024</div>
+      <div class="pie-pagina">Todos los derechos reservados
+        <br>2024©
+        <br>Actualidad Inmobiliaria
+        <br>Contador de visitas: 
+        <span id="visitCounter">0</span>
+      </div>      
     </div>
+
     <script src="scripts.js"></script>
+    <script src="contador.js"></script>
   </body>
 </html>
