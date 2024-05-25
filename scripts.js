@@ -9,6 +9,7 @@ function agregarEnlacesConVistaPrevia(idBloque, enlaces) {
     imagen.alt = "Vista previa";
     var anchor = document.createElement("a");
     anchor.href = enlace.url;
+    anchor.target = "_blank"; // Esto hará que el enlace se abra en una nueva pestaña
     anchor.textContent = enlace.texto;
     contenedorEnlace.appendChild(imagen);
     contenedorEnlace.appendChild(anchor);
