@@ -3,7 +3,7 @@ html {
   margin: 0%; /* Altura del titulo */
   padding: 0;
   height: 100%; /* Altura del titulo */
-  background-image: url("documentos/fondo3.jpg");
+  background-image: url("documentos/fondo.jpg");
   background-size: cover;
   font-family: Arial, Helvetica, sans-serif;
 }
