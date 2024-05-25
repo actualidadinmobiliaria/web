@@ -1,7 +1,32 @@
+body {
+  scrollbar-width: thin; /* "auto" o "thin" */
+  scrollbar-color: rgb(255, 255, 255) rgb(0, 0, 0); /* Color del deslizador y del carril */
+}
+
+body::-webkit-scrollbar {
+  width: 7px; /* Ancho de toda la barra de desplazamiento */
+}
+
+body::-webkit-scrollbar-track {
+  background: rgb(255, 255, 255); /* Color del área de seguimiento */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(0, 0, 0); /* Color del deslizador de la barra */
+  border-radius: 3px; /* Redondez del deslizador */
+  border: 1px solid rgb(255, 255, 255); /* Borde alrededor del deslizador */
+}
+
+
+
+
+
+
+
 body,
 html {
   margin: 0%; /* Altura del titulo */
-  padding: 0;
+  padding: 0%;
   height: 100%; /* Altura del titulo */
   background-image: url("documentos/fondo.jpg");
   background-size: cover;
@@ -14,6 +39,7 @@ html {
   height: 100%;
   min-height: 100%;
   position: relative;
+  top: 10%;
   padding-bottom: 100px; /* Altura del pie de página */
 }
 
@@ -27,28 +53,52 @@ html {
 }
 
 .bloques {
-  text-align: center;
+  
+  position: relative;
+  top: 5%;
+  text-align: justify;
   display: flex;
   justify-content: space-around;
   width: 100%;
 }
 
+
+/* Aplica estos estilos a los bloques específicos que tienen la barra de desplazamiento */
+.bloque::-webkit-scrollbar {
+  width: 5px; /* Ancho de la barra de desplazamiento */
+}
+
+.bloque::-webkit-scrollbar-track {
+  background: #6d7a92; /* Color de fondo del área de seguimiento */
+}
+
+.bloque::-webkit-scrollbar-thumb {
+  background-color: #ffffff; /* Color del deslizador */
+  border-radius: 5px; /* Redondez del deslizador */
+  border: 1px solid #000000; /* Borde alrededor del deslizador */
+}
+
+
+
 .bloque {
-  width: 30%;
+  
+  
+  width: 32%;
   padding: 20px;
-  margin: 10px;
+  margin: 0px;
   transition: transform 0.3s;
   cursor: pointer;
   overflow-y: scroll; /* Agrega scroll vertical si el contenido es más grande que el bloque */
-  max-height: 300px; /* Ajusta la altura máxima según tus necesidades */
+  max-height: 350px; /* Ajusta la altura máxima según tus necesidades */
   position: relative; /* Necesario para position: sticky */
 }
 
 .bloque h2 {
+  text-align: center;
   color: #ffffff;
   background-color: #6d7a92; /* Color de fondo para el título */
   position: sticky;
-  top: 0%; /* Distancia desde la parte superior del bloque */
+  top: -6%; /* Distancia desde la parte superior del bloque */
   padding: 0px;
   margin-top: 0; /* Elimina el margen superior */
   width: calc(100% - 0px); /* Ajusta el ancho para considerar el padding */
@@ -76,6 +126,8 @@ html {
 
 /* Estilos para el menú de navegación */
 .menu-navegacion {
+  position: relative;
+  top: 5%;
   cursor: pointer; /* Cambia el cursor al pasar sobre el menú */
   display: flex;
   justify-content: flex-end;
@@ -160,6 +212,12 @@ html {
     background-size: cover;
   }
 
+  .contenedor {
+    position: relative;
+    top: 0%;
+
+  }
+
   .titulo-principal {
     font-size: 1em;
     margin: 1%; /* Altura del titulo */
@@ -176,6 +234,8 @@ html {
   }
 
   .bloque {
+
+    transform: translateX(1%);
     width: 83%;
   }
 

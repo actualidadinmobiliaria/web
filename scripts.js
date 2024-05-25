@@ -19,10 +19,11 @@ function agregarEnlacesConVistaPrevia(idBloque, enlaces) {
 // Ejemplo de enlaces con vista previa
 var enlacesArriendo = [
   {
-    texto: "Inmueble 1",
+    texto:
+      "Arrendo apartamento en barrio la sombrilla, cuenta con habitación amplia, baño, lavadero, cocina, espacio para nevera y lavadora, patio para estender ropa, incluye servicios de agua y energía.",
     url: "https://web.facebook.com/groups/679651734136035?locale=es_LA",
     imagen: "documentos/Captura1.JPG",
-  },
+  }, 
   {
     texto: "Inmueble 1",
     url: "https://web.facebook.com/groups/679651734136035?locale=es_LA",
