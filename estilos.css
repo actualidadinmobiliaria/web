@@ -75,8 +75,6 @@ body::-webkit-scrollbar-thumb {
   font-size: 1em;
 }
 
-.contenedor {
-}
 
 .contenedor-enlace {
   background-color: #f0f0f0; /* Cambia esto por el color de fondo que prefieras */
@@ -224,8 +222,7 @@ iframe {
     background-image: url("documentos/fondo7.jpg");
   }
 
-  .contenedor {
-  }
+
 
   .titulo-principal {
     text-align: center;
