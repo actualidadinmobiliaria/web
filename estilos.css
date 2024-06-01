@@ -1,10 +1,9 @@
-
 body,
 html {
   margin: 0%; /* Altura del titulo */
   padding: 0%;
-  height: 100%; /* Altura del titulo */
-  background-image: url("documentos/fondo.jpg");
+  height: 1%; /* Altura del titulo */
+  background-image: url("documentos/fondo7.jpg");
   background-size: cover;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -28,19 +27,17 @@ body::-webkit-scrollbar-thumb {
   border: 1px solid rgb(255, 255, 255); /* Borde alrededor del deslizador */
 }
 
-
 .donaciones {
   position: relative;
   top: 2%;
   padding-left: 2%;
   font-size: 0.7em;
-
 }
 
 /* Estilos para el menú de navegación */
 .menu-navegacion {
   position: relative;
-  top: 5%;
+  top: 10000%;
   cursor: pointer; /* Cambia el cursor al pasar sobre el menú */
   display: flex;
   justify-content: flex-end;
@@ -78,18 +75,8 @@ body::-webkit-scrollbar-thumb {
   font-size: 1em;
 }
 
-
 .contenedor {
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  min-height: 100%;
-  position: relative;
-  top: 10%;
-  padding-bottom: 100px; /* Altura del pie de página */
 }
-
 
 .contenedor-enlace {
   background-color: #f0f0f0; /* Cambia esto por el color de fondo que prefieras */
@@ -109,19 +96,22 @@ body::-webkit-scrollbar-thumb {
   margin-right: 10px; /* Añade espacio entre la imagen y el texto del enlace */
 }
 
-
-
 .titulo-principal {
-  font-size: 2em;
-  margin: 1%; /* Altura del titulo */
-}
-.subtitulo {
   font-size: 1.5em;
   margin: 1%; /* Altura del titulo */
 }
+.subtitulo {
+  font-size: 0.9em;
+  margin: 0.9%; /* Altura del titulo */
+}
+
+/* Ajusta el valor para cambiar el tamaño quite el cierre
+iframe {
+  transform: scale(1.09); 
+  transform-origin: top left;
+  } Esto asegura que el iframe se escale desde la esquina superior izquierda */
 
 .bloques {
-  
   position: relative;
   top: 5%;
   text-align: justify;
@@ -130,10 +120,9 @@ body::-webkit-scrollbar-thumb {
   width: 100%;
 }
 
-
 /* Aplica estos estilos a los bloques específicos que tienen la barra de desplazamiento */
 .bloque::-webkit-scrollbar {
-  width: 5px; /* Ancho de la barra de desplazamiento */
+  width: 3px; /* Ancho de la barra de desplazamiento */
 }
 
 .bloque::-webkit-scrollbar-track {
@@ -141,23 +130,19 @@ body::-webkit-scrollbar-thumb {
 }
 
 .bloque::-webkit-scrollbar-thumb {
-  background-color: #ffffff; /* Color del deslizador */
-  border-radius: 5px; /* Redondez del deslizador */
-  border: 1px solid #000000; /* Borde alrededor del deslizador */
+  background-color: #7a7b92; /* Color del deslizador */
+  border-radius: 1px; /* Redondez del deslizador */
+  border: 1px solid #ff0000; /* Borde alrededor del deslizador */
 }
 
-
-
 .bloque {
-  
-  
   width: 32%;
-  padding: 20px;
+  padding: 1px;
   margin: 0px;
   transition: transform 0.3s;
   cursor: pointer;
   overflow-y: scroll; /* Agrega scroll vertical si el contenido es más grande que el bloque */
-  max-height: 350px; /* Ajusta la altura máxima según tus necesidades */
+  max-height: 600px; /* Ajusta la altura máxima según tus necesidades */
   position: relative; /* Necesario para position: sticky */
 }
 
@@ -180,30 +165,25 @@ body::-webkit-scrollbar-thumb {
 
 .bloque:hover {
   transform: scale(1.05);
-
-
-
-
 }
 .pie-pagina {
   font-weight: bold;
-  position: absolute;
-  bottom: 0%;
   width: 100%;
   text-align: center;
-  padding: 20px;
+  padding: 270px;
   box-sizing: border-box;
-  color: #ffffff;
+  color: #050505;
+  justify-content: center;
+  padding-bottom: 100px; /* Altura del pie de página */
 }
-
 
 /* Estilos para pantallas pequeñas */
 @media (max-width: 480px) {
   .menu-navegacion {
-    top: 20px; /* Ajusta la posición vertical según tus necesidades */
+    top: 40px; /* Ajusta la posición vertical según tus necesidades */
     right: 20px; /* Ajusta la posición horizontal según tus necesidades */
     position: fixed;
-    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    z-index: 1; /* Asegura que esté por encima de otros elementos */
     cursor: pointer; /* Cambia el cursor al pasar sobre el menú */
     background-color: #333;
     padding: 1px;
@@ -215,7 +195,7 @@ body::-webkit-scrollbar-thumb {
     content: "";
     display: block;
     height: 1px;
-    width: 3px;
+    width: 1px;
     background-color: #333; /* Color de las líneas */
     margin: 5px 0;
   }
@@ -229,9 +209,10 @@ body::-webkit-scrollbar-thumb {
     flex-direction: flex;
     position: absolute;
     top: 30px;
-    right: 0;
+    right: 85%;
     background-color: #333;
-    width: 310px;
+    width: 320px;
+    font-size: 0.7em;
   }
 
   .menu-enlaces.active {
@@ -240,52 +221,55 @@ body::-webkit-scrollbar-thumb {
 
   body,
   html {
-    background-image: url("documentos/fondo.jpg");
-    background-size: cover;
+    background-image: url("documentos/fondo7.jpg");
   }
 
   .contenedor {
-    position: relative;
-    top: 0%;
-
   }
 
   .titulo-principal {
-    font-size: 1em;
+    text-align: center;
+    font-size: 1.3em;
     margin: 1%; /* Altura del titulo */
-    padding-top: 30%;
+    padding-top: 15%;
   }
 
   .subtitulo {
-    font-size: 0.7em;
-    margin: 1%; /* Altura del titulo */
+    text-align: center;
   }
 
   .bloques {
     display: block; /* Esto asegura que el bloque se muestre debajo del título */
+    transform: translateX(0%);
   }
 
   .bloque {
-    max-height: 300px; /* Ajusta la altura máxima según tus necesidad*/
-    transform: translateX(1%);
-    width: 83%;
+    max-height: 1200px; /* Ajusta la altura máxima según tus necesidad*/
+    width: 95%;
+    margin: 10px;
   }
 
-
   .bloque h2 {
-
     top: -7%; /* Distancia desde la parte superior del bloque */
-
   }
 
   .pie-pagina {
     font-weight: bold;
     position: relative;
-    bottom: 1%;
+    bottom: 100%;
     width: 100%;
     text-align: center;
-    padding: 70px;
+    padding: 90px;
     box-sizing: border-box;
-    color: #ffffff;
+    color: #000000;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .bloques iframe {
+    /* Estilos solo para dispositivos con ancho de pantalla hasta 600px */
+    width: 100%;
+
+    /* Otros estilos específicos para móviles */
   }
 }
